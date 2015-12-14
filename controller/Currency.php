@@ -63,7 +63,7 @@ class Currency {
 	
 	public function Logger($oLog)
 	{
-		$insertOpts = array("safe" => true);
+		$insertOpts = array("w" => 1);
 		$this->oDb->Logs->insert($oLog,$insertOpts);
 	}
 	

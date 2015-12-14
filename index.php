@@ -51,6 +51,6 @@
 		$result = array('error'=>1,'mesage'=>'Запрос некорректен');		
 	}
 	
-	
+	header('Content-type: application/json');
 	echo json_encode($result,false);
 
